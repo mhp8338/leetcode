@@ -5,6 +5,10 @@ import java.util.List;
 
 /**
  * @author xuepipi
+ * 回溯法:暴力解法
+ * 由于长度未知才使用回溯法，否则多重循环
+ * 时间复杂度:O(2^n)
+ * 空间复杂度:O(len(s))
  */
 class Solution {
     private List<String> res = new ArrayList<>();
@@ -52,7 +56,7 @@ class Solution {
         String letter = NUMBER_DIGITS[c - '0'];
         for (int i = 0; i < letter.length(); i++) {
             System.out.println("digits["+index+"]="+c+",use "+letter.charAt(i));
-            //每次循环都包含剪枝操作
+            //每次循环的回溯操作
             letterCombinations(digits, index + 1, s + letter.charAt(i));
         }
         //都结束返回，可有可无
