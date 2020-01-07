@@ -9,6 +9,7 @@ import java.util.List;
  */
 class Solution {
     /**
+     * 排列问题
      * res:存储返回值
      * used:判断元素是否使用，如果使用则不再考虑
      */
