@@ -38,6 +38,6 @@ public class Solution4 {
         int[] w = {1, 2, 3};
         int[] v = {6, 10, 12};
         int c = 5;
-        System.out.println(new Solution().knapsack01(w, v, c));
+        System.out.println(new Solution4().knapsack01(w, v, c));
     }
 }
