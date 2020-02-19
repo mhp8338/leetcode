@@ -113,13 +113,76 @@ class SortAlgorithm(object):
             if new_n == 0:
                 break
         return arr
+    
+    @staticmethod
+    def merge_sort(arr) -> list:
+        n = len(arr)
+        if n <= 1:
+            return arr
+        
+        if n <= 15:
+            return SortAlgorithm.insert_sort(arr)
+        
+        mid = int(len(arr) / 2)
+        left = SortAlgorithm.merge_sort(arr[:mid])
+        right = SortAlgorithm.merge_sort(arr[mid:])
+        return SortAlgorithm._merge(left, right)
+    
+    @staticmethod
+    def _merge(left, right):
+        """
+        合并[left,mid] 与[mid+1,right]
+        """
+        # 优化一：先判定再排序
+        left_len = len(left)
+        right_len = len(right)
+        if left[left_len - 1] <= right[0]:
+            return left + right
+        c = []
+        h = j = 0
+        while j < left_len and h < right_len:
+            # j -> left h->right
+            if left[j] < right[h]:
+                c.append(left[j])
+                j += 1
+            else:
+                c.append(right[h])
+                h += 1
+        # 存在一个到底
+        if j == len(left):
+            for i in right[h:]:
+                c.append(i)
+        else:
+            for i in left[j:]:
+                c.append(i)
+        return c
+    
+    @staticmethod
+    def merge_sort_bu(arr) -> list:
+        n = len(arr)
+        if n <= 1:
+            return arr
+        
+        if n <= 15:
+            return SortAlgorithm.insert_sort(arr)
+        sz = 1
+        while sz < n:
+            left = 0
+            c = []
+            while left < n - sz:
+                # [0,sz-1][sz,sz+sz-1]
+                c.extend(SortAlgorithm._merge(arr[left: (left + sz)], arr[(left + sz): min(left + sz + sz, n)]))
+                left += sz
+            sz *= 2
+            arr = c
+        return arr
 
 
 if __name__ == '__main__':
-    list1 = [1, 3, 4, 7, 9, 2, 3, 1]
+    list1 = [1, 3, 4, 7, 9, 2, 3, 1, 1, 3, 4, 7, 9, 2, 3, 1, 1, 3, 4, 7, 9, 2, 3, 1, 1, 3, 4, 7, 9, 2, 3, 1]
     # print(SortAlgorithm.selection_sort(list1))
     # list1.reverse()
     # print(list1)
     # print(SortAlgorithm.insert_sort(list1))
     # print(SortAlgorithm.select_sort_optimization(list1))
-    print(SortAlgorithm.shell_sort(list1))
+    print(SortAlgorithm.merge_sort_bu(list1))
