@@ -6,9 +6,12 @@ class SortAlgorithm(object):
     """
     时间复杂度：O(N^2)
     """
-
+    
     @classmethod
     def selection_sort(cls, arr) -> list:
+        """
+        选择排序
+        """
         for i in range(len(arr)):
             # 找到最小值元素
             min_index = i
@@ -18,7 +21,7 @@ class SortAlgorithm(object):
                     min_index = j
             arr[i], arr[min_index] = arr[min_index], arr[i]
         return arr
-
+    
     # 每轮找到当前未处理元素的最大值和最小值的索引
     @classmethod
     def select_sort_optimization(cls, arr) -> list:
@@ -42,19 +45,39 @@ class SortAlgorithm(object):
             left += 1
             right -= 1
         return arr
-
+    
     @classmethod
     def insert_sort(cls, arr) -> list:
         for i in range(1, len(arr)):
             # (0,i]
             j = i
             e = arr[i]
+            # 找位置
             while j > 0 and arr[j - 1] > e:
                 arr[j] = arr[j - 1]
                 j -= 1
             arr[j] = e
         return arr
-
+    
+    @classmethod
+    def shell_sort(cls, arr) -> list:
+        n = len(arr)
+        # gap每次递减2的倍数
+        gap = int(n / 2)
+        while gap > 0:
+            # 插入排序
+            for i in range(gap, n):
+                temp = arr[i]
+                # 生成一个j指针，指向i，此时j指向每组的最后一个
+                j = i
+                while j >= gap and arr[j - gap] > temp:
+                    arr[j] = arr[j - gap]
+                    j -= gap
+                # 找到要插入的位置
+                arr[j] = temp
+            gap = int(gap / 2)
+        return arr
+    
     @classmethod
     def bubble_sort(cls, arr) -> list:
         n = len(arr)
@@ -74,7 +97,7 @@ class SortAlgorithm(object):
             if swap is False:
                 break
         return arr
-
+    
     @classmethod
     def bubble_sort_optimization(cls, arr) -> list:
         n = len(arr)
@@ -99,4 +122,4 @@ if __name__ == '__main__':
     # print(list1)
     # print(SortAlgorithm.insert_sort(list1))
     # print(SortAlgorithm.select_sort_optimization(list1))
-    print(SortAlgorithm.bubble_sort_optimization(list1))
+    print(SortAlgorithm.shell_sort(list1))
