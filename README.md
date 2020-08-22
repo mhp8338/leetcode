@@ -1,4 +1,3 @@
-# leetcode
 # Leetcode Introduction
 
 > 本文旨在将leetcode的题型分类
@@ -57,14 +56,22 @@
 
 利用哈希表以空间换时间
 
-| Leetcode                                | Java                                                       | Python                                                       |
-| --------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| 167. Two Sum II - Input array is sorted |                                                            | [Python](https://www.cnblogs.com/xm08030623/p/13431743.html) |
-| 202. Happy Number                       | [Java](https://www.cnblogs.com/xm08030623/p/13496589.html) |                                                              |
-| 242. Valid Anagram                      | [Java](https://www.cnblogs.com/xm08030623/p/13496576.html) |                                                              |
-| 290. Word Pattern                       | [Java](https://www.cnblogs.com/xm08030623/p/13496605.html) |                                                              |
-| 350. Intersection of Two Arrays II      | [Java](https://www.cnblogs.com/xm08030623/p/13496540.html) |                                                              |
-| 719. Find K-th Smallest Pair Distance   | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/mapandset/leetcode_719/Solution.java)                                                           |
+| Leetcode                                | Java                                                         | Python                                                       |
+| --------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 167. Two Sum II - Input array is sorted |                                                              | [Python](https://www.cnblogs.com/xm08030623/p/13431743.html) |
+| 202. Happy Number                       | [Java](https://www.cnblogs.com/xm08030623/p/13496589.html)   |                                                              |
+| 242. Valid Anagram                      | [Java](https://www.cnblogs.com/xm08030623/p/13496576.html)   |                                                              |
+| 290. Word Pattern                       | [Java](https://www.cnblogs.com/xm08030623/p/13496605.html)   |                                                              |
+| 350. Intersection of Two Arrays II      | [Java](https://www.cnblogs.com/xm08030623/p/13496540.html)   |                                                              |
+| 719. Find K-th Smallest Pair Distance   | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/mapandset/leetcode_719/Solution.java) |                                                              |
+
+### Pattern: Tree集合的使用，ceiling&floor
+
+| Leetcode                    | Java                                                         | Python |
+| --------------------------- | ------------------------------------------------------------ | ------ |
+| 220. Contains Duplicate III | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/mapandset/slidingwindow/leetcode_220/Solution.java) |        |
+|                             |                                                              |        |
+|                             |                                                              |        |
 
 ## Pattern: Cyclic Sort，**循环排序**
 
