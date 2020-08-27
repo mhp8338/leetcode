@@ -83,13 +83,15 @@
 |          |      |        |
 |          |      |        |
 
-## Pattern: In-place Reversal of a LinkedList，**链表翻转**
+## Pattern: LinkedList，**链表**
 
-| Leetcode | Java | Python |
-| -------- | ---- | ------ |
-|          |      |        |
-|          |      |        |
-|          |      |        |
+| Leetcode                                                     | Java                                                         | Python |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 83. Remove Duplicates from Sorted List                       | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_83/Solution.java) |        |
+| 86. [Partition List](https://leetcode.com/problems/partition-list) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_86/Solution.java) |        |
+| 92. Reverse Linked List II                                   | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_92/Solution.java) |        |
+| 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_206/Solution.java) |        |
+|                                                              |                                                              |        |
 
 ## Pattern: Tree Breadth First Search，**树上的BFS**
 
