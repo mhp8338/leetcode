@@ -87,11 +87,17 @@
 
 | Leetcode                                                     | Java                                                         | Python |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 2. [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_2/Solution.java) |        |
+| 21. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/dummyhead/leetcode_203/Solution.java) |        |
+| 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/complexlinkedlist/leetcode_24/Solution.java) |        |
+| 82. [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/dummyhead/leetcode_82/Solution.java) |        |
 | 83. Remove Duplicates from Sorted List                       | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_83/Solution.java) |        |
 | 86. [Partition List](https://leetcode.com/problems/partition-list) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_86/Solution.java) |        |
 | 92. Reverse Linked List II                                   | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_92/Solution.java) |        |
+| 203. [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/dummyhead/leetcode_203/Solution.java) |        |
 | 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_206/Solution.java) |        |
-|                                                              |                                                              |        |
+| 328. [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_328/Solution.java) |        |
+| 445. [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii) | [Java](https://github.com/mhp8338/leetcode/blob/master/src/main/leetcode/leetcode/linkedlist/basicsolution/leetcode_445/Solution.java) |        |
 
 ## Pattern: Tree Breadth First Search，**树上的BFS**
 
